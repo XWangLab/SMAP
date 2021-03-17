@@ -1,6 +1,5 @@
-**README.md**
-
-**SMAP :** *S*ample *Ma*tching for large-scale *P*roteomics (SMAP)
+*S*ample *Ma*tching for large-scale *P*roteomics (SMAP)
+-------------------------------------------------------
 
 A pipeline to validate and correct sample identity based on a
 combination of concordance and specificity scores. SMAP first detects
@@ -26,21 +25,19 @@ Software requirement
 --------------------
 
 Linux operating system
-----------------------
 
 Get started
 -----------
 
 Users can use the following script to detect and correct samples.
 
-perl pipeline.pl &gt; outcome.txt
----------------------------------
+**perl pipeline.pl &gt; outcome.txt**
+
 
 Input file examples
 -------------------
 
 SNP and protein database 
--------------------------
 
 The variant data were re-annotated using the genome annotation tool
 ANNOVAR (Wang et al., 2010) based on the human reference genome (hg19)
@@ -95,33 +92,27 @@ K.ADTSQEICSPR.L;cu|84681\_76309|cu;/home/groupdirs/wanglab/ling/project/genotype
 Output file
 -----------
 
-MS\_SNPmatrix\_head.txt
------------------------
+**MS\_SNPmatrix\_head.txt**
+
 
 This is a temporary file to save the genotypes in each sample, the columns are including: \#CHROM, POS, ID,REF,ALT,QUAL,FILTER,INFO,FORMAT, and sample ids.
------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Mutant\_Reference\_quan\_results.txt
-------------------------------------
+**Mutant\_Reference\_quan\_results.txt**
 
-This is a temporary file to save the quantity results.
-------------------------------------------------------
+*This is a temporary file to save the quantity results.*
 
 chr1:22839498-22839498.A\_G ZBTB40 p.N848S 1 FAASSTLK 1 psy\_dwp\_b01\_f19.8838.1.2.spout cu|5378\_41890|cu /home/xwang4/2018/Psycho\_genotype\_2/Database\_search/Batch1/gnm\_SNP\_MS/intermediate/psy\_dwp\_b01\_f19/psy\_dwp\_b01\_f19.1/psy\_dwp\_b01\_f19.8838.1.2.spout 167018.90 103700.16 163867.60 105834.09 154465.75 118336.61 114133.33 80552.52 93904.62 296129.15 111908.22 0.401093476598089 0.1073754608744 0.386475472781999 0.117274168354891 0.342862906800241 0.175269879671094 0.155772033360017 0 0.0619366765312176 1 0.145450367231365 nonzero
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 chr19:622336-622336.T\_G POLRMT p.E555A 1 QYWEALGAPEALR 1 psy\_dwp\_b01\_f12.20429.1.2.spout cu|5378\_56811|cu /home/xwang4/2018/Psycho\_genotype\_2/Database\_search/Batch1/gnm\_SNP\_MS/intermediate/psy\_dwp\_b01\_f12/psy\_dwp\_b01\_f12.1/psy\_dwp\_b01\_f12.20429.1.2.spout 29395.04 74782.12 90367.44 45756.24 46073.51 49550.12 51208.19 42921.40 58650.97 60005.98 39541.38 0 0.74438729654729 1 0.268337805302071 0.273541307214412 0.330560712715917 0.357754492196469 0.221843981867205 0.479822509856919 0.502045843693212 0.16640873575585 nonzero
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Inferred\_results.txt
----------------------
+**Inferred\_results.txt**
 
-SMAP infers sample allelic information based on the relative expression
-level of each sample, then infers allelic information for each sample
-based on the scaled intensities of the identified variant peptides
+*SMAP infers sample allelic information based on the relative expression*
+*level of each sample, then infers allelic information for each sample*
+*based on the scaled intensities of the identified variant peptides*
 
-There are two parts in this file, first is the counting numbers, the
-second part is the scores.
+*There are two parts in this file, first is the counting numbers, the*
+*second part is the scores.*
 
   Part 1                                 
   -------- ------------ ---------------- -------------------
@@ -135,7 +126,7 @@ second part is the scores.
   22       2015-921     3.666667         0.509091
   23       2016-926     3.666667         0.43459
 
-output.txt
+**output.txt**
 
 This file saved all the results of counting steps, you could print to
 the screen if no saving in the file.
@@ -143,8 +134,8 @@ the screen if no saving in the file.
 Data preparation
 ----------------
 
-Identify variant peptides in the proteomics data 
--------------------------------------------------
+**Identify variant peptides in the proteomics data** 
+
 
 All the steps in the analysis of a MS-based proteomic data are used the
 JUMPg program.JUMPg program (Li et al., 2016) was used to identify
@@ -166,10 +157,8 @@ Contact information
 -------------------
 
 For any questions please contact [*xusheng.wang@und.edu*](mailto:xusheng.wang@und.edu)
---------------------------------------------------------------------------------------
 
 [Packages](https://github.com/users/jart/packages?repo_name=cosmopolitan)
--------------------------------------------------------------------------
 
 No packages published 
 ----------------------

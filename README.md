@@ -1,4 +1,4 @@
-*S*ample *Ma*tching for large-scale *P*roteomics (SMAP)
+Sample Matching for large-scale Proteomics *(SMAP)*
 -------------------------------------------------------
 
 A pipeline to validate and correct sample identity based on a
